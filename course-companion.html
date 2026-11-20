@@ -3,7 +3,11 @@
 .hero>.wrap.section.art-hero,.pagehead .wrap.art-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(290px,400px);gap:24px;align-items:center;padding-right:28px}
 .art-pair{display:grid;grid-template-columns:1fr 1fr;align-items:center;justify-items:center;gap:16px;margin:0}
 .art-pair img{display:block;max-width:100%;width:100%;height:clamp(106px,13vw,174px);object-fit:contain}
-.art-pair .existing-art{mix-blend-mode:multiply}
+.art-pair .existing-art {
+  mix-blend-mode: multiply;
+  filter: brightness(1.14);
+  transform: scale(1.32);
+}
 @media(max-width:800px){
   .hero>.wrap.section.art-hero,.pagehead .wrap.art-hero{grid-template-columns:minmax(0,1fr);gap:18px;padding-right:20px}
   .art-pair{width:min(100%,400px);margin-inline:auto;gap:12px}
